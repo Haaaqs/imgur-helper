@@ -16,7 +16,7 @@ public class Main {
             @Override
             public void onSuccess(JsonObject jsonObject) {
                 System.out.println(jsonObject);
-                jsonObject.get("link"); // getting the link of the upload image
+                jsonObject.get("link"); // getting the link of the uploaded image
             }
 
             @Override
@@ -29,7 +29,7 @@ public class Main {
         try {
             JsonObject jsonObject = helper.uploadSync(new File("PATH"));
             System.out.println(jsonObject);
-            jsonObject.get("link"); // getting the link of the upload image
+            jsonObject.get("link"); // getting the link of the uploaded image
         } catch (IOException | ImgurUploaderException e) {
             e.printStackTrace();
         }
