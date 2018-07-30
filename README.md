@@ -50,7 +50,7 @@ Both will produce a similar result.
 ```xml
 <repository>
     <id>ihaq-maven</id>
-    <url>http://maven.ihaq.me/artifactory/libs-maven/</url>
+    <url>http://maven.ihaq.me/libs-maven/</url>
 </repository>
 
 <dependency>
@@ -64,7 +64,7 @@ Both will produce a similar result.
 ```gradle
 repositories {
     maven {
-        url "http://maven.ihaq.me/artifactory/libs-maven/"
+        url "http://maven.ihaq.me/libs-maven/"
     }
 }
 
