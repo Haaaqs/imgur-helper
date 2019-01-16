@@ -1,6 +1,6 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg) ](LICENSE)
 
-# Imgur Helper
+# imgur-uploader
 A simple library that allows you to upload your images to imgur.
 
 ## Usage
