@@ -45,14 +45,13 @@ Both will produce a similar result.
 ```
 
 ## Download
-
-#### Maven
 ```xml
 <repository>
-    <id>ihaq-maven</id>
-    <url>http://maven.ihaq.me/libs-maven/</url>
+   <id>maven-public</id>
+   <url>http://nexus.ihaq.me/repository/maven-public/</url>
 </repository>
-
+```
+```xml
 <dependency>
     <groupId>me.ihaq</groupId>
     <artifactId>imgur-uploader</artifactId>
@@ -60,15 +59,3 @@ Both will produce a similar result.
 </dependency>
 ```
 
-#### Gradle
-```gradle
-repositories {
-    maven {
-        url "http://maven.ihaq.me/libs-maven/"
-    }
-}
-
-dependencies {
-    compile 'me.ihaq:imgur-uploader:1.0'
-}
-```
