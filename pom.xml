@@ -19,18 +19,7 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>http://nexus.ihaq.me/repository/maven-snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>nexus-releases</id>
-            <url>http://nexus.ihaq.me/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
-
+         
     <dependencies>
         <dependency>
             <groupId>com.google.code.gson</groupId>
