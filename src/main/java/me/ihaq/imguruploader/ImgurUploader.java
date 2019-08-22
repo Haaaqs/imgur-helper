@@ -3,7 +3,6 @@ package me.ihaq.imguruploader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
 import me.ihaq.imguruploader.exception.ImgurUploaderException;
 import me.ihaq.imguruploader.util.Callback;
 
@@ -14,6 +13,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
+import java.util.Base64;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -57,7 +57,7 @@ public class ImgurUploader {
         ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
         ImageIO.write(image, "png", byteArray);
         byte[] byteImage = byteArray.toByteArray();
-        String dataImage = Base64.encode(byteImage);
+        String dataImage = Base64.getEncoder().encodeToString(byteImage);
         return "image=" + URLEncoder.encode(dataImage, "UTF-8");
     }
 
