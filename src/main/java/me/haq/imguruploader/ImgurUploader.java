@@ -1,10 +1,10 @@
-package me.ihaq.imguruploader;
+package me.haq.imguruploader;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-import me.ihaq.imguruploader.exception.ImgurUploaderException;
-import me.ihaq.imguruploader.util.Callback;
+import me.haq.imguruploader.exception.ImgurUploaderException;
+import me.haq.imguruploader.util.Callback;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

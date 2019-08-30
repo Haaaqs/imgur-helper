@@ -1,4 +1,4 @@
-package me.ihaq.imguruploader.util;
+package me.haq.imguruploader.util;
 
 import com.google.gson.JsonObject;
 

@@ -1,4 +1,4 @@
-package me.ihaq.imguruploader.exception;
+package me.haq.imguruploader.exception;
 
 public class ImgurUploaderException extends Exception {
 
